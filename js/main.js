@@ -48,10 +48,10 @@ window.addEventListener('scroll', () => {
 // 2. TYPEWRITER — animation texte hero
 // ============================================================
 const phrases = [
-  'Développeur Full Stack',
-  'Développeur React',
-  'Développeur Node.js',
-  'Amoureux du Clean Code',
+  'Full Stack Developer',
+  'React Developer',
+  'Node.js Developer',
+  'Passionate about Clean Code',
 ];
 
 let phraseIndex = 0;
@@ -277,9 +277,9 @@ document.addEventListener('DOMContentLoaded', () => {
 console.log(
   `%c
   ╔════════════════════════════════════════╗
-  ║  👋  Bonjour, curieux !                ║
-  ║  Mon portfolio est open source.        ║
-  ║  github.com/votrepseudo/portfolio      ║
+  ║  👋  Hello , curious !                 ║
+  ║  My portfolio is open source.          ║
+  ║  github.com/Lessa22/portfolio          ║
   ╚════════════════════════════════════════╝
   `,
   'color: #39ff8a; font-family: monospace; font-size: 12px;'
