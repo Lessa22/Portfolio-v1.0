@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Développeur Full Stack</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;VotreNom /&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">// Bonjour, je suis</p>
+        <h1 class="hero-name">Votre <span class="accent">Nom</span></h1>
+        <h2 class="hero-title">
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor">|</span>
+        </h2>
+        <p class="hero-description">
+          Développeur passionné par le code propre, les architectures scalables
+          et les interfaces qui impressionnent. Je transforme des idées complexes
+          en solutions élégantes.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+          <a href="assets/cv.pdf" class="btn btn-ghost" download>
+            ↓ Télécharger CV
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/votrepseudo" target="_blank" class="social-link">GitHub</a>
+          <span class="social-sep">·</span>
+          <a href="https://linkedin.com/in/votrepseudo" target="_blank" class="social-link">LinkedIn</a>
+          <span class="social-sep">·</span>
+          <a href="https://twitter.com/votrepseudo" target="_blank" class="social-link">Twitter</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-frame">
+          <img src="assets/images/photo.jpg" alt="Photo de profil" class="profile-photo" id="profilePhoto" />
+          <div class="image-fallback" id="imageFallback">
+            <span class="fallback-initials">VN</span>
+          </div>
+          <div class="image-glow"></div>
+        </div>
+        <div class="floating-badge badge-1">
+          <span class="badge-dot"></span>
+          Disponible
+        </div>
+        <div class="floating-badge badge-2">
+          ⚡ 3+ ans d'exp.
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-radial"></div>
+  </section>
+
+  <!-- ========== À PROPOS ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">À propos</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Développeur Full Stack basé à <strong class="accent">Antananarivo</strong>, je conçois
+            des applications web modernes alliant performance, sécurité et expérience utilisateur
+            irréprochable.
+          </p>
+          <p>
+            Mon approche : écrire du code <strong class="accent">lisible, testé et maintenable</strong>.
+            Je m'intéresse autant à l'architecture backend qu'aux micro-animations frontend.
+          </p>
+          <p>
+            En dehors du code, je contribue à l'open source, je partage mes apprentissages
+            et je reste constamment en veille technologique.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Projets livrés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Ans d'expérience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Lignes de code</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-code">
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-filename">about.js</span>
+            </div>
+            <pre class="code-content"><code><span class="kw">const</span> <span class="var">developer</span> = {
+  name: <span class="str">"Votre Nom"</span>,
+  location: <span class="str">"Antananarivo, MG"</span>,
+  role: <span class="str">"Full Stack Developer"</span>,
+  stack: [
+    <span class="str">"JavaScript"</span>,
+    <span class="str">"React"</span>,
+    <span class="str">"Node.js"</span>,
+    <span class="str">"MongoDB"</span>
+  ],
+  passions: [
+    <span class="str">"Clean Code"</span>,
+    <span class="str">"Open Source"</span>,
+    <span class="str">"Performance"</span>
+  ],
+  available: <span class="bool">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">Stack technique</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item" data-level="90">
+              <span class="skill-name">JavaScript (ES6+)</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-item" data-level="85">
+              <span class="skill-name">React.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item" data-level="75">
+              <span class="skill-name">HTML / CSS</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+              <span class="skill-pct">70%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item" data-level="85">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item" data-level="80">
+              <span class="skill-name">Express.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-item" data-level="65">
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+              <span class="skill-pct">65%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Outils & DevOps</h3>
+          <div class="skill-list">
+            <div class="skill-item" data-level="88">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-item" data-level="72">
+              <span class="skill-name">Docker</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+              <span class="skill-pct">72%</span>
+            </div>
+            <div class="skill-item" data-level="68">
+              <span class="skill-name">Linux / Ubuntu</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+              <span class="skill-pct">68%</span>
+            </div>
+            <div class="skill-item" data-level="60">
+              <span class="skill-name">CI/CD</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+              <span class="skill-pct">60%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tech-tags">
+        <span class="tag">React</span><span class="tag">Node.js</span>
+        <span class="tag">JavaScript</span><span class="tag">TypeScript</span>
+        <span class="tag">MongoDB</span><span class="tag">Express</span>
+        <span class="tag">Docker</span><span class="tag">Git</span>
+        <span class="tag">REST API</span><span class="tag">GraphQL</span>
+        <span class="tag">Jest</span><span class="tag">Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJETS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Projets</h2>
+      </div>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card" data-category="fullstack">
+          <div class="project-header">
+            <div class="project-icon">⚡</div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">↗ Code</a>
+              <a href="#" class="project-link" title="Live">↗ Live</a>
+            </div>
+          </div>
+          <h3 class="project-title">Nom du Projet 1</h3>
+          <p class="project-desc">
+            Application full stack de gestion de tâches avec authentification JWT,
+            temps réel via WebSocket et tableau de bord analytique.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">React</span>
+            <span class="ptag">Node.js</span>
+            <span class="ptag">MongoDB</span>
+            <span class="ptag">Socket.io</span>
+          </div>
+        </article>
+
+        <article class="project-card featured" data-category="fullstack">
+          <div class="project-featured-badge">★ Featured</div>
+          <div class="project-header">
+            <div class="project-icon">🚀</div>
+            <div class="project-links">
+              <a href="#" class="project-link">↗ Code</a>
+              <a href="#" class="project-link">↗ Live</a>
+            </div>
+          </div>
+          <h3 class="project-title">Projet Phare</h3>
+          <p class="project-desc">
+            Plateforme e-commerce complète avec paiement Stripe, panneau admin,
+            gestion des stocks et interface mobile-first optimisée.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">React</span>
+            <span class="ptag">Express</span>
+            <span class="ptag">PostgreSQL</span>
+            <span class="ptag">Stripe</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="frontend">
+          <div class="project-header">
+            <div class="project-icon">🎨</div>
+            <div class="project-links">
+              <a href="#" class="project-link">↗ Code</a>
+              <a href="#" class="project-link">↗ Live</a>
+            </div>
+          </div>
+          <h3 class="project-title">UI Design System</h3>
+          <p class="project-desc">
+            Bibliothèque de composants React réutilisables avec Storybook,
+            accessibilité WCAG AA et thèmes personnalisables.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">React</span>
+            <span class="ptag">TypeScript</span>
+            <span class="ptag">Storybook</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="backend">
+          <div class="project-header">
+            <div class="project-icon">🔒</div>
+            <div class="project-links">
+              <a href="#" class="project-link">↗ Code</a>
+            </div>
+          </div>
+          <h3 class="project-title">API REST Sécurisée</h3>
+          <p class="project-desc">
+            API Node.js avec authentification OAuth2, rate limiting,
+            documentation Swagger auto-générée et tests unitaires complets.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Node.js</span>
+            <span class="ptag">Express</span>
+            <span class="ptag">JWT</span>
+            <span class="ptag">Jest</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="fullstack">
+          <div class="project-header">
+            <div class="project-icon">📊</div>
+            <div class="project-links">
+              <a href="#" class="project-link">↗ Code</a>
+              <a href="#" class="project-link">↗ Live</a>
+            </div>
+          </div>
+          <h3 class="project-title">Dashboard Analytics</h3>
+          <p class="project-desc">
+            Tableau de bord en temps réel avec graphiques D3.js,
+            export PDF, filtres avancés et notifications push.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">React</span>
+            <span class="ptag">D3.js</span>
+            <span class="ptag">WebSocket</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="frontend">
+          <div class="project-header">
+            <div class="project-icon">🌐</div>
+            <div class="project-links">
+              <a href="#" class="project-link">↗ Code</a>
+              <a href="#" class="project-link">↗ Live</a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio Animé</h3>
+          <p class="project-desc">
+            Site portfolio avec animations GSAP, transitions de pages fluides,
+            mode sombre et performances Lighthouse 100/100.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">HTML/CSS</span>
+            <span class="ptag">JavaScript</span>
+            <span class="ptag">GSAP</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Disponible pour des missions freelance, des collaborations ou
+            un poste à temps plein. N'hésitez pas à me contacter !
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <a href="mailto:votre@email.com" class="contact-value">votre@email.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span class="contact-value">Antananarivo, Madagascar</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⚡</span>
+              <span class="contact-value contact-available">Disponible dès maintenant</span>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://github.com/votrepseudo" target="_blank" class="social-btn">GitHub</a>
+            <a href="https://linkedin.com/in/votrepseudo" target="_blank" class="social-btn">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jean@exemple.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject" placeholder="Projet freelance" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Décrivez votre projet..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            Envoyer le message →
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✓ Message envoyé avec succès ! Je vous réponds sous 24h.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-logo">&lt;VotreNom /&gt;</span>
+        <p class="footer-text">
+          Conçu &amp; développé avec ❤️ en JavaScript
+        </p>
+        <span class="footer-year">© 2025</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
